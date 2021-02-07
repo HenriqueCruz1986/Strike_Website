@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@font-face {
+	font-family: audiowide;
+	src: url("../fontes/Audiowide-Regular.ttf");
+}
+/* CORPO */
+body {
+	width: 100%;
+	background-color: #e9fdff;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#container {
+	width: 100%;
+	text-align: center;
+}
+ 
+/*Formatação Logo*/
+header#cabecalho img#icone {
+	position: relative;
+	top: 30px;
+	left: 1150px;
+}
+
+/* Formatação do Menu */
+nav {
+	display: block;
+	font-family: audiowide;;
+}
+
+nav > a {
+	font-weight: 800;
+	font-size: 32px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 500px;
+	transition: all .5s;
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	background-color: #829FD9;
+	transition: background-color 1s;
+	width: 100%;
+}
+
+nav ul li a {
+	display: inline-block;
+	color: black;
+	padding: 10px 0px;	
+	border-right: 1px solid #efefef;
+	width: 100%;
+	text-decoration: none;
+}
+
+nav ul li a:hover {	
+	color: #fff;
+}
+
+/* Formatação do Cabeçalho */
+header {
+	width: 100%;
+	background-color: #b7c6dd;
+	font-weight: 600;
+}
+
+header label {
+	color: #efefef;
+	font-size: 25px;
+	display: block;
+	padding: 5px 10px;
+	width: 20px;
+	border-right: 1px solid #efefef;
+}
+
+header label:hover {
+	background-color: #ff5900;
+}
+
+header#cabecalho {
+	border-bottom: 1px #dddddd solid;
+	height: 150px;
+}
+
+/* Formatação do texto */
+h2 {
+	text-align: left;
+	margin: 10px;
+}
+section#corpo {
+	display: block;
+	width: 700px;
+	float: left;
+	border-right: 1px solid #dddddd;
+	text-indent: 30px;
+	margin: 10px;
+}
+
+aside#lateral {
+	display: block;
+	width: 600px;
+	float: left;
+	text-indent: 30px;
+	margin: 5px;
+}
+
+p {
+	font-size: 16pt;
+	text-align: justify;
+	font-family: audiowide;
+	padding-right: 15px;
+}
+
+h3 {
+	font-family: arial;
+	font-size: 20pt;
+	text-align: center;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 0px;
+	margin: 10px;
+}
+
+img#sites {
+	position: relative;
+	left: 70px;
+}
+
+img#dev {
+	position: relative;
+	left: 50px;
+}
+
+img#orcam {
+	position: relative;
+	left: 20px;
+}
+
+/* Formatação do Rodapé */
+footer#rodape {
+	background-color: #b7c6dd;
+	clear: both;
+	border-top: 1px solid #dddddd;
+	padding: 15px;
+}
+
+footer#rodape p {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+	body{
+		width: 100%;
+	}
+
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+	}
+
+	/*nav ul {
+		position: relative;
+		flex-direction: column;
+		margin-left: -70%;
+	}
+	*/
+
+	header {
+		width: 100%;
+		display: block;
+	}
+}
