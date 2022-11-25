@@ -5,8 +5,6 @@
 }
 
 html, body {
-	
-	
 	height: 100%;
 	padding: 0;
 	margin: 0;
@@ -18,11 +16,6 @@ body {
 	background-color: #e9fdff;
 }
 
-#container {
-	width: 100%;
-	margin: 00px;
-}
-
 /* Formatação do Cabeçalho */
 header {
 	background-image: linear-gradient(to bottom, #b7c6dd 40%, #829FD9 90%);
@@ -30,14 +23,16 @@ header {
 }
 
 /*Formatação Logo*/
-img#logo #icone {
-	display: block;
+#logo {
+	display: inline-block;
 	margin: auto;
-	width: 100%;
+	padding-left: 40px;
 }
 
-#logo {
-	margin-right: 40%;
+#icone {
+	display: inline-block;
+	margin: auto;
+	margin-left: auto;
 }
 
 /* Formatação do Menu */
@@ -88,16 +83,16 @@ h2 {
 /* Conteúdo Principal */
 .wrapper {
 	margin: auto;
-	max-width: 1450px;
+	max-width: 100%;
 }
 
 main#corpo {
 	border-right: 1px solid #dddddd;
 	display: block;
-	width: 700px;
 	float: left;
 	height: 100%;
 	margin: auto;
+	max-width: 700px;
 	padding: 20px;
 	text-indent: 30px;
 	justify-content: center;
@@ -105,12 +100,11 @@ main#corpo {
 
 aside#lateral {
 	display: block;
-	width: 600px;
 	float: left;
-	text-indent: 30px;
 	margin: auto;
-	margin: 10px;
+	max-width: 700px;
 	padding: 20px;
+	text-indent: 30px;
 	justify-content: center;
 }
 
@@ -118,8 +112,7 @@ p {
 	font-size: 16pt;
 	text-align: justify;
 	font-family: audiowide;
-	padding-right: 15px;
-	max-width: 140vw;
+	padding: 10px;
 }
 
 h3 {
@@ -132,12 +125,9 @@ h3 {
 	margin: 10px;
 }
 
-img#sites #dev #orcam{
-	position: block;
+#sites, #dev, #orcam {
+	display: block;
 	margin: auto;
-	max-width: 1490px;
-	min-width: 350px;
-	width: 100%;
 }
 
 /* Formatação do Rodapé */
