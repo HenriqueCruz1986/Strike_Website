@@ -32,7 +32,7 @@ header {
 #icone {
 	display: inline-block;
 	margin: auto;
-	margin-left: auto;
+	margin-left: 40%;
 }
 
 /* Formatação do Menu */
@@ -68,7 +68,9 @@ nav ul li a {
 
 }
 
-nav ul li a:hover {	
+nav ul li a:hover {
+	background-color: #94b2df;
+	border-radius: 7px;	
 	color: #fff;
 }
 
