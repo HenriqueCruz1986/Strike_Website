@@ -5,7 +5,7 @@
 }
 
 html, body {
-	height: 100%;
+	height: 100vh;
 	padding: 0;
 	margin: 0;
 	max-width: 100vw;
@@ -25,14 +25,15 @@ header {
 /*Formatação Logo*/
 #logo {
 	display: inline-block;
-	margin: auto;
-	padding-left: 40px;
+	position: relative;
+	left: 5%;
+	margin-top: -10%;
 }
 
 #icone {
 	display: inline-block;
-	margin: auto;
-	margin-left: 40%;
+	position: relative;
+	left: 28vw;
 }
 
 /* Formatação do Menu */
@@ -60,8 +61,8 @@ nav ul li {
 }
 
 nav ul li a {
-	display: inline-block;
 	color: black;
+	display: inline-block;
 	font-size: 16px;
 	text-decoration: none;
 	padding: 0px 50px 0px 50px;
@@ -70,7 +71,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	background-color: #94b2df;
-	border-radius: 7px;	
+	border-radius: 5px;	
 	color: #fff;
 }
 
@@ -86,6 +87,8 @@ h2 {
 .wrapper {
 	margin: auto;
 	max-width: 100%;
+	column-count: 2;
+	margin-bottom: 80px;
 }
 
 main#corpo {
@@ -94,7 +97,7 @@ main#corpo {
 	float: left;
 	height: 100%;
 	margin: auto;
-	max-width: 700px;
+	max-width: 700vw;
 	padding: 20px;
 	text-indent: 30px;
 	justify-content: center;
@@ -104,14 +107,14 @@ aside#lateral {
 	display: block;
 	float: left;
 	margin: auto;
-	max-width: 700px;
+	max-width: 600vw;
 	padding: 20px;
 	text-indent: 30px;
 	justify-content: center;
 }
 
 p {
-	font-size: 16pt;
+	font-size: min(16pt, 2.5vw);
 	text-align: justify;
 	font-family: audiowide;
 	padding: 10px;
@@ -130,6 +133,9 @@ h3 {
 #sites, #dev, #orcam {
 	display: block;
 	margin: auto;
+	max-width: 60%;
+	min-width: 85%;
+
 }
 
 /* Formatação do Rodapé */
@@ -144,4 +150,10 @@ footer#rodape p {
 	display: block;
 	text-align: center;
 	font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+	.wrapper{
+		column-count: 1;
+	}
 }
