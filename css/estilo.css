@@ -14,33 +14,39 @@ html, body {
 
 body {
 	background-color: #e9fdff;
+	height: 10vh;
 }
 
 /* Formatação do Cabeçalho */
 header {
 	background-image: linear-gradient(to bottom, #b7c6dd 40%, #829FD9 90%);
-	max-width: 100vw;
+	width: 100vw;
 }
 
 /*Formatação Logo*/
 #logo {
-	display: inline-block;
 	position: relative;
 	left: 5%;
-	margin-top: -10%;
+	top: 5%;
+	max-width: 35%;
+	margin: 0;
+	padding: 0;
 }
 
+/* Icone do Menu */
 #icone {
-	display: inline-block;
 	position: relative;
-	left: 28vw;
+	max-width: 15%;
+	left: 40%;
+	top: 10px;
+	margin: 0;
 }
 
 /* Formatação do Menu */
 nav {
 	background-color: #829FD9;
 	font-family: audiowide;
-	max-width: 100vw;
+	width: 100vw;
 }
 
 nav ul {
@@ -85,10 +91,11 @@ h2 {
 
 /* Conteúdo Principal */
 .wrapper {
+	column-count: 2;
 	margin: auto;
 	max-width: 100%;
-	column-count: 2;
 	margin-bottom: 80px;
+	width: 1400px;
 }
 
 main#corpo {
@@ -115,6 +122,8 @@ aside#lateral {
 
 p {
 	font-size: min(16pt, 2.5vw);
+	font-weight: 100;
+	line-height: 2em;
 	text-align: justify;
 	font-family: audiowide;
 	padding: 10px;
