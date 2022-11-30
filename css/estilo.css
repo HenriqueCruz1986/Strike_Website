@@ -163,7 +163,7 @@ footer#rodape {
 footer#rodape p {
 	display: block;
 	text-align: center;
-	font-size: 14px;
+	font-size: min(14pt, 2.5vw);
 }
 
 footer a {
