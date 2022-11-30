@@ -8,16 +8,16 @@
 		<title>Strike WebSites</title>
 	</head>
 	<script language="javascript" src="javascript/funcoes.js"></script>
-	<body>
+	<body onresize="mudouTela()">
 	<div id="container">
 
 		<header id="cabecalho">
 			<a href="#"><img id="logo" src="img/logo.png"/></a>
 			<img id="icone" src="img/home.png"/>
-			<span class="menu-hamburguer"><img src="img/baseline_menu_black_48dp.png" alt=""></span>
+			<span class="menu-burguer" onclick="clickMenu()"><img src="img/baseline_menu_black_48dp.png" alt="menu-burguer"></span>
 		</header>
 		
-		<nav id="menu">		
+		<nav id="burguer">		
 			<ul>
 				<li onmouseover="mudafoto('img/home.png')" onmouseout="mudafoto('img/home.png')"><a href="index.html">Home</a></li>
 				<li onmouseover="mudafoto('img/portifolio.png')" onmouseout="mudafoto('img/home.png')"><a href="portifolio.html">Portifólio</a></li>

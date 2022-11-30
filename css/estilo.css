@@ -79,7 +79,8 @@ nav ul li a:hover {
 	color: #fff;
 }
 
-.menu-hamburguer {
+.menu-burguer {
+	cursor: pointer;
 	position: relative;
 	left: 42vw;
 	top: -2vh;
@@ -177,13 +178,17 @@ footer a:hover {
 
 footer img {
 	position: relative;
-	left: 45%;
+	left: 44%;
 	margin: 10px;
 }
 
 @media screen and (max-width: 1200px) {
 	.wrapper{
 		column-count: 1;
+	}
+
+	main#corpo {
+		border-right: none;
 	}
 }
 
@@ -202,7 +207,7 @@ footer img {
 }
 
 @media screen and (min-width: 781px) {
-	.menu-hamburguer {
+	.menu-burguer {
 		display: none;
 	}
 }
