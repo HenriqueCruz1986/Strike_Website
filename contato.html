@@ -4,48 +4,64 @@
         <meta charset="UTF-8"/>
         <title>Strike WebSites</title>
         <link rel="stylesheet" href="css/contato.css">
-        <link rel="stylesheet" href="css/estilo.css">
     </head>
     <script language="javascript" src="javascript/funcoes.js"></script>
     <body>
-        <header id="cabecalho">
-            <img id="icone" src="img/contato.png"/>
-            <img id="logo" src="img/logo.png"/>
-        </header>
-        <nav id="menu">
-            <ul>
-                <li onmouseover="mudafoto('img/home.png')" onmouseout="mudafoto('img/contato.png')"><a href="index.html">Home</a></li>
-                <li onmouseover="mudafoto('img/portifolio.png')" onmouseout="mudafoto('img/contato.png')"><a href="portifolio.html">Portifólio</a></li>
-                <li onmouseover="mudafoto('img/contato.png')" onmouseout="mudafoto('img/contato.png')"><a href="contato.html">Fale conosco</a></li>
-            </ul>
-        </nav>
-                <h2>Fale Conosco > Contato</h2>
-                <h3>Formulário de Contato</h3>
-                
-                <form method="POST" action="./php/form.php">
-                    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
-                        <p><label for="cNome">Nome:&nbsp;</label><input type="text" name="tNome" id="cNome" size="80" maxlength="50" placeholder="Nome Completo / Empresa"></p>
-                        <p><label for="cMail">E-mail:&nbsp;</label><input type="email" name="tMail" id="cMail" size="40" maxlength="40" placeholder="joão@joãozinho.com.br"></p>
-                        <fieldset id="sexo"><legend>Sexo:</legend>
-                            <input type="radio" name="sexo" id="cMasc" checked> <label for="cMasc">Masculino</label>
-                            <input type="radio" name="sexo" id="cFem"> <label for="cFem">Feminino</label>
+        <div id="container">
+            <header id="cabecalho">
+                <img id="icone" src="img/contato.png"/>
+                <img id="logo" src="img/logo.png"/>
+            </header>
+            <nav id="menu">
+                <ul>
+                    <li onmouseover="mudafoto('img/home.png')" onmouseout="mudafoto('img/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudafoto('img/portifolio.png')" onmouseout="mudafoto('img/contato.png')"><a href="portifolio.html">Portifólio</a></li>
+                    <li onmouseover="mudafoto('img/contato.png')" onmouseout="mudafoto('img/contato.png')"><a href="contato.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+                <div id="conteudo">
+                    <h2>Fale Conosco > Contato</h2>
+                    <h3>Formulário de Contato</h3>
+                    <form method="POST" action="./php/form.php">
+                        <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+                            <p>
+                                <label for="cNome">Nome:&nbsp;</label><input type="text" name="tNome" id="cNome" size="50" maxlength="50" placeholder="Nome Completo / Empresa">
+                            </p>
+                            <p>
+                                <label for="cMail">E-mail:&nbsp;</label><input type="email" name="tMail" id="cMail" size="40" maxlength="40" placeholder="joão@joãozinho.com.br">
+                            </p>
+                            <fieldset id="sexo"><legend>Sexo:</legend>
+                                <input type="radio" name="sexo" id="cMasc" checked> <label for="cMasc">Masculino</label>
+                                <input type="radio" name="sexo" id="cFem"> <label for="cFem">Feminino</label>
+                            </fieldset>
+                            <p>
+                                <label for="tNasc">Data de Nascimento: &nbsp; &nbsp;</label><input type="date" name="tNasc" id="cNasc">
+                            </p>
                         </fieldset>
-                        <p><label for="tNasc">Data de Nascimento: &nbsp; &nbsp;</label><input type="date" name="tNasc" id="cNasc"></p>
-                    </fieldset>
+                        <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+                            <p>
+                                <label for="cUrg">Grau de Urgência:&nbsp; &nbsp;</label>
+                                Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5">Máx
+                            </p>
+                            <p>
+                                <label for="cMsg">Mensagem:</label><br/>
+                                <textarea name="tMsg" id="cMsg" cols="1" rows="10"           placeholder="Deixe aqui sua mensagem">
+                                </textarea>
+                            </p>
+                        </fieldset>
+                        <input type="submit" value="Enviar" name="tBotao" id="cBotao">
+                        <input type="reset" value="Limpar" name="tLimp" id="cBotao">
+                    </form>
+                </div>
 
-                    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-                        <p><label for="cUrg">Grau de Urgência:&nbsp; &nbsp;</label>
-                         Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5">Máx</p>
-                        <p><label for="cMsg">Mensagem:</label><br/>
-                        <textarea name="tMsg" id="cMsg" cols="100" rows="15" placeholder="Deixe aui sua mensagem"></textarea></p>
-                    </fieldset>
-
-                    <input type="submit" value="Enviar" name="tBotao" id="cBotao">
-                    <input type="reset" value="Limpar" name="tLimp" id="cBotao">
-                </form>
-        <footer id="rodape">
-            <p>Copyright &copy; 2020 - by Henrique Cruz</p>
+            <footer id="rodape">
+                <div>
+                    <p>Copyright &copy; 2020 - By <a href="https://github.com/HenriqueCruz1986" target="_blank">Henrique Cruz</a></p>
+                    <a href="https://github.com/HenriqueCruz1986" target="_blank"><img src="img/github32.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/vinicius-henrique-cruz/" target="_blank"><img src="img/linkedin32.png" alt="Linkedin"></a>
+                    <a href="https://m.facebook.com/henrique.cruz.1986" target="_blank"><img src="img/facebook32.png" alt="Facebook"></a>
+                </div>
+            </footer>
         </div>
-        </footer>
     </body>
 </html>
