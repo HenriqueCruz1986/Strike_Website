@@ -20,6 +20,7 @@ body {
 /* Formatação do Cabeçalho */
 header {
 	background-image: linear-gradient(to bottom, #b7c6dd 40%, #829FD9 90%);
+	position: relative;
 	width: 100vw;
 }
 
@@ -30,15 +31,15 @@ header {
 	top: 5%;
 	max-width: 35%;
 	margin: 0;
-	padding: 0;
+	padding-top: 20px;
 }
 
 /* Icone do Menu */
 #icone {
-	position: relative;
+	position: absolute;
 	max-width: 15%;
-	left: 40%;
-	top: 10px;
+	left: 50%;
+	top: 20px;
 	margin: 0;
 }
 
@@ -158,6 +159,7 @@ footer#rodape {
 	clear: both;
 	border-top: 1px solid #dddddd;
 	padding: 15px;
+	position: relative;
 }
 
 footer#rodape p {
