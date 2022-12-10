@@ -1,89 +1,11 @@
 @charset "UTF-8";
-@font-face {
-	font-family: audiowide;
-	src: url("../fontes/Audiowide-Regular.ttf");
-}
 
-html, body {
-	height: 100vh;
-	padding: 0;
-	margin: 0;
+#main {
+	display: block;
+	position: relative;
+	margin: auto;
+	width: 1250px;
 	max-width: 100vw;
-	width: 100%;
-}
-
-body {
-	background-color: #e9fdff;
-	height: 10vh;
-}
-
-/* Formatação do Cabeçalho */
-header {
-	background-image: linear-gradient(to bottom, #b7c6dd 40%, #829FD9 90%);
-	width: 100vw;
-}
-
-/*Formatação Logo*/
-#logo {
-	position: relative;
-	left: 5%;
-	top: 5%;
-	max-width: 35%;
-	margin: 0;
-	padding: 0;
-}
-
-/* Icone do Menu */
-#icone {
-	position: relative;
-	max-width: 15%;
-	left: 40%;
-	top: 10px;
-	margin: 0;
-}
-
-/* Formatação do Menu */
-nav {
-	background-color: #829FD9;
-	font-family: audiowide;
-	font-size: min(14pt, 3vw);
-	width: 100vw;
-}
-
-nav ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	list-style: none;
-	margin: 0;
-	padding-right: 10px;
-	text-transform: uppercase;
-	transition: all .5s;	
-}
-
-nav ul li {
-	transition: background-color 1s;
-	text-align: center;
-}
-
-nav ul li a {
-	color: black;
-	display: inline-block;
-	padding: 10px 30px;
-	text-decoration: none;
-}
-
-nav ul li a:hover {
-	background-color: #94b2df;
-	border-radius: 5px;	
-	color: #fff;
-}
-
-.menu-burguer {
-	cursor: pointer;
-	position: relative;
-	left: 42vw;
-	top: -3vh;
 }
 
 /*Status Pagina */
@@ -94,19 +16,15 @@ h2 {
 	max-width: 100vw;
 }
 
-#conteudo {
-    width: 1400px;
-    margin: auto;
-}
-
 h3 {
 	font-family: arial;
 	font-size: min(20pt, 3.5vw);
 	text-align: center;
 	color: #606060;
 	background-color: #dddddd;
-	padding: 5px 0px 5px 0px;
+	padding: 5px 0px;
 	margin: 10px;
+	max-width: 1200px;
 }
 
 /* Formatação do texto */
@@ -114,10 +32,11 @@ fieldset {
 	border-color: #cecece;
 	margin: 20px;
 	font-family: audiowide;
+	max-width: 1200px;
 }
 
 fieldset#sexo {
-	width: 900px;
+	max-width: 900px;
 }
 
 input, textarea {
@@ -125,10 +44,11 @@ input, textarea {
 	font-weight: normal;
 	font-size: 13pt;
 	background-color: rgba(255,255,255,0.8);
+	max-width: 1100px;
 }
 
 textarea {
-	width: 900px;
+	max-width: 900;
 	margin: 10px;
 }
 
@@ -150,39 +70,10 @@ input#cBotao {
 	display: inline-block;
 	position: relative;
 	top: 0px;
-	left: 570px;
+	left: 45%;
 	padding: 10px;
-	margin: 10px;
+	margin: 30px 20px;
+	margin-bottom: 60px;
 	background-color: blue;
 	color: #ffffff;
-}
-
-/* Formatação do Rodapé */
-footer#rodape {
-	background-color: #b7c6dd;
-	clear: both;
-	border-top: 1px solid #dddddd;
-	padding: 15px;
-}
-
-footer#rodape p {
-	display: block;
-	text-align: center;
-	font-size: min(14pt, 2.5vw);
-}
-
-footer a {
-	color: black;
-	text-decoration: none;
-}
-
-footer a:hover {
-	color: #234079;
-	text-decoration: underline;
-}
-
-footer img {
-	position: relative;
-	left: 44%;
-	margin: 10px;
 }

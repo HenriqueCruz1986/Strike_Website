@@ -4,31 +4,38 @@
         <meta charset="UTF-8"/>
         <title>Strike WebSites</title>
         <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="css/estilo.css">
     </head>
-    <script language="javascript" src="javascript/funcoes.js"></script>
+    
     <body>
         <div id="container">
+
             <header id="cabecalho">
                 <img id="icone" src="img/contato.png"/>
-                <img id="logo" src="img/logo.png"/>
+                <a href="index.html"><img id="logo" src="img/logo.png"/></a>
+                <span class="menu-burguer" onclick="clickMenu()"><img src="img/baseline_menu_black_48dp.png" alt="menu-burguer"></span>
             </header>
-            <nav id="menu">
+
+            <nav id="burguer">
                 <ul>
                     <li onmouseover="mudafoto('img/home.png')" onmouseout="mudafoto('img/contato.png')"><a href="index.html">Home</a></li>
                     <li onmouseover="mudafoto('img/portifolio.png')" onmouseout="mudafoto('img/contato.png')"><a href="portifolio.html">Portifólio</a></li>
                     <li onmouseover="mudafoto('img/contato.png')" onmouseout="mudafoto('img/contato.png')"><a href="contato.html">Fale conosco</a></li>
                 </ul>
             </nav>
-                <div id="conteudo">
-                    <h2>Fale Conosco > Contato</h2>
+
+            <div id="conteudo">
+                <h2>Fale Conosco > Contato</h2>
+
+                <div id="main">
                     <h3>Formulário de Contato</h3>
                     <form method="POST" action="./php/form.php">
                         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
                             <p>
-                                <label for="cNome">Nome:&nbsp;</label><input type="text" name="tNome" id="cNome" size="50" maxlength="50" placeholder="Nome Completo / Empresa">
+                                <label for="cNome">Nome:&nbsp;</label><input type="text" name="tNome" id="cNome" size="30" maxlength="50" placeholder="Nome Completo / Empresa">
                             </p>
                             <p>
-                                <label for="cMail">E-mail:&nbsp;</label><input type="email" name="tMail" id="cMail" size="40" maxlength="40" placeholder="joão@joãozinho.com.br">
+                                <label for="cMail">E-mail:&nbsp;</label><input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder="joão@joãozinho.com.br">
                             </p>
                             <fieldset id="sexo"><legend>Sexo:</legend>
                                 <input type="radio" name="sexo" id="cMasc" checked> <label for="cMasc">Masculino</label>
@@ -45,7 +52,7 @@
                             </p>
                             <p>
                                 <label for="cMsg">Mensagem:</label><br/>
-                                <textarea name="tMsg" id="cMsg" cols="1" rows="10"           placeholder="Deixe aqui sua mensagem">
+                                <textarea name="tMsg" id="cMsg" cols="34" rows="15"           placeholder="Deixe aqui sua mensagem">
                                 </textarea>
                             </p>
                         </fieldset>
@@ -53,6 +60,7 @@
                         <input type="reset" value="Limpar" name="tLimp" id="cBotao">
                     </form>
                 </div>
+            </div>
 
             <footer id="rodape">
                 <div>
@@ -63,5 +71,6 @@
                 </div>
             </footer>
         </div>
+        <script language="javascript" src="javascript/funcoes.js"></script>
     </body>
 </html>
