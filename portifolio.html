@@ -10,18 +10,22 @@
 	<body>
 		<header id="cabecalho">
 			<img id="icone" src="img/portifolio.png"/>
-			<img id="logo" src="img/logo.png"/>	
+			<a href="index.html"><img id="logo" src="img/logo.png"/></a>
+			<span class="menu-burguer" onclick="clickMenu()"><img src="img/baseline_menu_black_48dp.png" alt="menu-burguer"></span>
 		</header>
-		<nav id="menu">
+		
+		<nav id="burguer">
 			<ul>
 				<li onmouseover="mudafoto('img/home.png')" onmouseout="mudafoto('img/portifolio.png')"><a href="index.html">Home</a></li>
 				<li onmouseover="mudafoto('img/portifolio.png')" onmouseout="mudafoto('img/portifolio.png')"><a href="portifolio.html">Portifólio</a></li>
 				<li onmouseover="mudafoto('img/contato.png')" onmouseout="mudafoto('img/portifolio.png')"><a href="contato.html">Fale conosco</a></li>
 			</ul>
 		</nav>
-			<h2>Portifólio > Nossos trabalhos</h2>
+		
+		<h2>Portifólio > Nossos trabalhos</h2>
 
-			<ul id="album-fotos">	
+		<main id="principal">
+			<ul id="album-fotos">
 				<li id="foto01"><span>Site GRID Racing Team</span></li>
 				<li id="foto02"><span>Site 02</span></li>
 				<li id="foto03"><span>Site 03</span></li>
@@ -38,9 +42,15 @@
 				<li id="foto14"><span>Site 14</span></li>
 				<li id="foto15"><span>Site 15</span></li>
 			</ul>
-	
-	<footer id="rodape">
-		<p>Copyright &copy; 2020 - By Henrique Cruz</p>
-	</footer>
+		</main>
+
+		<footer id="rodape">
+			<div>
+				<p>Copyright &copy; 2020 - By <a href="https://github.com/HenriqueCruz1986" target="_blank">Henrique Cruz</a></p>
+				<a href="https://github.com/HenriqueCruz1986" target="_blank"><img src="img/github32.png" alt="GitHub"></a>
+				<a href="https://www.linkedin.com/in/vinicius-henrique-cruz/" target="_blank"><img src="img/linkedin32.png" alt="Linkedin"></a>
+				<a href="https://m.facebook.com/henrique.cruz.1986" target="_blank"><img src="img/facebook32.png" alt="Facebook"></a>
+			</div>
+		</footer>
 	</body>
 </html>
