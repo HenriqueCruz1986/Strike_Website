@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 ul#album-fotos {
-	max-width: 900px;
+	max-width: 900vw;
 	margin: 0 auto;
-	padding: 50px;
+	padding-top: 20px;
 	overflow: hidden;
 	list-style: none;
+	min-width: 500px;
+	width: 50%;
+	justify-content: center;
 }
 
 ul#album-fotos li {
@@ -23,24 +26,43 @@ ul#album-fotos li span {
 	opacity: 0;
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000000;
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.5);
 	font-size: 9pt;
-	line-height: 370px;
-	padding: 5px;
+	line-height: 380px;
 }
 
 ul#album-fotos li:hover {
 	transform: scale(1.5);
 }
 
-ul#album-fotos li:hover span {
+ul#album-fotos li:hover span, ul#album-fotos > li:hover > a{
 	opacity: 1;
+}
+
+ul#album-fotos > li > a {
+	background-color: rgba(0,0,0,.5);
+	border-radius: 10px;
+	color: rgb(177, 52, 52);
+	font-size: 12pt;
+	padding: 5px;
+	position: absolute;
+	opacity: 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000000;
+	top: 50%;
+	left: 40%;
+}
+
+ul#album-fotos > li > a:hover {
+	background-color: rgba(0,0,0,.7);
+	color: blue;
+
 }
 
 ul#album-fotos li#foto01 {
 	background: url('../img/pagegrid.png') no-repeat;
 	background-position: 50% 50%;
-	background-size: 400px 242px;
+	background-size: 400px 348px;
 	background-color: #ffffff;
 }
 
@@ -50,9 +72,9 @@ ul#album-fotos li#foto01:hover {
 }
 
 ul#album-fotos li#foto02 {
-	background: url('../img/pagestrike.jpg') no-repeat;
+	background: url('../img/PageRedesSociais.jpg ') no-repeat;
 	background-position: 50% 50%;
-	background-size: 400px 362px;
+	background-size: 400px 312px;
 	background-color: #ffffff;
 }
 
@@ -62,9 +84,9 @@ ul#album-fotos li#foto02:hover {
 }
 
 ul#album-fotos li#foto03 {
-	background: url('../img/manut.jpg') no-repeat;
+	background: url('../img/pagecordel.jpg') no-repeat;
 	background-position: 50% 50%;
-	background-size: 400px 381px;
+	background-size: 400px 362px;
 	background-color: #ffffff;
 }
 
@@ -74,9 +96,9 @@ ul#album-fotos li#foto03:hover {
 }
 
 ul#album-fotos li#foto04 {
-	background: url('../img/codigos.jpg') no-repeat;
+	background: url('../img/PageNetflixClone.jpg') no-repeat;
 	background-position: 50% 50%;
-	background-size: 400px 300px;
+	background-size: 400px 338px;
 	background-color: #ffffff;
 }
 
@@ -87,7 +109,7 @@ ul#album-fotos li#foto04:hover {
 
 
 ul#album-fotos li#foto05 {
-	background: url('../img/manut.jpg') no-repeat;
+	background: url('../img/pageinstagram.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 381px;
 	background-color: #ffffff;
@@ -100,7 +122,7 @@ ul#album-fotos li#foto05:hover {
 
 
 ul#album-fotos li#foto06 {
-	background: url('../img/construtor.jpg') no-repeat;
+	background: url('../img/pagestrike.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 300px;
 	background-color: #ffffff;
@@ -112,7 +134,7 @@ ul#album-fotos li#foto06:hover {
 }
 
 ul#album-fotos li#foto07 {
-	background: url('../img/manut.jpg') no-repeat;
+	background: url('../img/construtor.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 381px;
 	background-color: #ffffff;
@@ -136,7 +158,7 @@ ul#album-fotos li#foto08:hover {
 }
 
 ul#album-fotos li#foto09 {
-	background: url('../img/codigos.jpg') no-repeat;
+	background: url('../img/construtor.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 300px;
 	background-color: #ffffff;
@@ -161,7 +183,7 @@ ul#album-fotos li#foto10:hover {
 
 
 ul#album-fotos li#foto11 {
-	background: url('../img/codigos.jpg') no-repeat;
+	background: url('../img/construtor.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 300px;
 	background-color: #ffffff;
@@ -174,7 +196,7 @@ ul#album-fotos li#foto11:hover {
 
 
 ul#album-fotos li#foto12 {
-	background: url('../img/manut.jpg') no-repeat;
+	background: url('../img/construtor.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 381px;
 	background-color: #ffffff;
@@ -187,7 +209,7 @@ ul#album-fotos li#foto12:hover {
 
 
 ul#album-fotos li#foto13 {
-	background: url('../img/codigos.jpg') no-repeat;
+	background: url('../img/construtor.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 300px;
 	background-color: #ffffff;
@@ -200,7 +222,7 @@ ul#album-fotos li#foto13:hover {
 
 
 ul#album-fotos li#foto14 {
-	background: url('../img/manut.jpg') no-repeat;
+	background: url('../img/construtor.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 381px;
 	background-color: #ffffff;
