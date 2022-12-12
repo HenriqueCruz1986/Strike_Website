@@ -1,14 +1,19 @@
 @charset "UTF-8";
 
-ul#album-fotos {
-	max-width: 900vw;
-	margin: 0 auto;
-	padding-top: 20px;
-	overflow: hidden;
-	list-style: none;
-	min-width: 500px;
-	width: 50%;
+main#principal {
+	display: flex;
 	justify-content: center;
+	margin: 0 auto;
+	max-width: 900px;
+	min-width: 480px;
+	width: 100vw;
+}
+
+ul#album-fotos {
+	list-style: none;
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 100px;
 }
 
 ul#album-fotos li {
