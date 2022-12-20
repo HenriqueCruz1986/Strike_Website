@@ -18,20 +18,17 @@ $body = "Nome: ".$nome. "\r\n".
 		"Grau Urg: ".$urg. "\r\n".
 		"Mensagem: ".$mensagem;
 
-$header = "From:contato@strikewebsites.com.br"."\r\n".
+$header = "From:strikewebsites@gmail.com"."\r\n".
 			"Replay-To:".$email."\r\n".
 			"X=Mailer:PHP/".phpversion();
 
 if(mail($to, $subject, $body, $header)){
-
 	echo("Mensagem enviada com sucesso!");
 }
 
 else{
-
 	echo("Erro no envio, tente novamente.");
 }
-
 }
 
 ?>
