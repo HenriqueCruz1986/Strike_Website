@@ -9,7 +9,7 @@ $nasc = addcslashes($_POST['tNasc']);
 $urg = addcslashes($_POST['tUrg']);
 $mensagem = addcslashes($_POST['tMsg']);
 
-$to = "contato@strikewebsites.com.br";
+$to = "strikewebsites@gmail.com";
 $subject = "Contato - Strike WebSites";
 $body = "Nome: ".$nome. "\r\n".
 		"Email: ".$email. "\r\n".
