@@ -65,7 +65,7 @@ ul#album-fotos > li > a:hover {
 }
 
 ul#album-fotos li#foto01 {
-	background: url('../img/pagegrid.png') no-repeat;
+	background: url('../img/pagegrid.jpg') no-repeat;
 	background-position: 50% 50%;
 	background-size: 400px 348px;
 	background-color: #ffffff;
